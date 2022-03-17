@@ -1,0 +1,396 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=NTR&display=swap');
+/* CSS Document */
+
+/* CUSTOM VARIABLES SWAGATA */
+:root	{
+	--light-blue-shade: #e1ecfb;
+	--lighter-blue: #1e56a0;
+	--dark-blue: #163172;
+}
+/* CUSTOM VARIABLES SWAGATA */
+/* 
+    font-family: 'Montserrat', sans-serif;
+
+    font-family: 'NTR', sans-serif; */
+
+*{
+	padding: 0;
+	margin: 0 auto;
+}
+ul {
+	margin: 0;
+	padding: 0;
+}
+li {
+	list-style: none;
+}
+a:focus, a:hover {
+	outline: none;
+}
+a {
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-ms-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+a:hover {
+	text-decoration: none;
+}
+p {
+	margin: 0;
+	padding: 0;
+	font-size: 14px;
+	color: #666d81;
+	line-height: 40px;
+	font-weight: 400;
+}
+body {
+	font-family: 'NTR', sans-serif;
+	font-size: 16px;
+	color: #7f7f7f;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Montserrat', sans-serif;
+	margin-bottom: 0;
+}
+
+
+
+/* ################################ CUSTOM CLASSES ################################ */
+
+.custom-pad {
+	padding:100px 0;
+}
+.custom-btn {	
+	margin: 5px;
+	text-align: center;
+	border: none;
+	border-radius: 4px;
+	font-size: 11px;
+	padding: 7px 30px;
+	text-transform: uppercase;
+	font-weight: 600;
+	font-family: 'Montserrat', sans-serif;
+	height: 35px;
+	transition: all 0.6s ease-in-out;
+}
+.custom-btn-fill {
+background: linear-gradient(to right, #163172, #1e56a0, #2F77D7);
+color: #fff;
+line-height: 23px;
+transition: all 1s ease-in-out;
+}
+.custom-btn-outline {
+border: 1px solid;
+border-color: var(--lighter-blue);
+color: var(--lighter-blue);
+}
+.bg-banner-gradient {
+	background-color: transparent;
+	background-image: linear-gradient(80deg,#163172 0%,#2F77D7 100%);
+  }
+
+/* ################################ CUSTOM CLASSES ################################ */
+
+/*
+        font-family: 'Exo', sans-serif;
+
+    font-family: 'Libre Baskerville', serif;
+*/
+
+.container{
+	width: 100%;
+	max-width: 1400px;
+}
+
+
+.dp-btn{
+	font-family: 'Montserrat', sans-serif;
+}
+
+/*=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+dp-toggle-nav-css-start=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+*/
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #fff;
+}
+
+
+.navbar-toggle .icon-bar {
+    display: block;
+    width: 22px;
+    height: 2px;
+    border-radius: 1px;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #fff;
+}
+.navbar-default .navbar-toggle {
+    border-color: #5f4b8b;
+    background: #5f4b8b;
+    outline: none;
+}
+
+.navbar-toggle {
+    position: relative;
+    float: right;
+    padding: 9px 10px;
+    margin-top: 8px;
+    margin-right: 15px;
+    margin-bottom: 8px;
+    background-color: transparent;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+.navbar-toggle .icon-bar {
+    display: block;
+    width: 22px;
+    height: 2px;
+    border-radius: 1px;
+}
+.navbar-toggle .icon-bar+.icon-bar {
+    margin-top: 4px;
+}
+.navbar-toggle .icon-bar+.icon-bar {
+    margin-top: 4px;
+}
+.navbar-header{
+	display:none;
+}
+
+
+/* ############################## HEADER+BANNER SWAGATA 16.03.2022 ############################## */
+.navbar-brand img {
+	height: 56px;
+  }
+  .navbar-nav .nav-item {
+	margin: 0 25px;
+	position: relative;	
+  }
+  .navbar-nav .nav-item .nav-link {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 14px;
+	line-height: 35px;
+	color: #333;
+	font-weight: 600;
+	padding: 0;
+	text-transform: uppercase;
+  }
+
+  .navbar-nav .nav-item::before {
+	content: '';
+	position: absolute;
+	width: 0;
+	height: 5px;
+	background-color: var(--lighter-blue);
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	transition: all 0.5s ease-in-out;
+  }
+  .navbar-nav .nav-item:hover::before	{
+	  width: 100%;
+
+  }
+  .header-button-wrap .header-btn, .header-socials-wrap .header-social {
+	display: inline-block;
+  }
+  
+  .header-socials-wrap .header-social .header-social-icon span {
+	width: 35px;
+	display: inline-block;
+	height: 35px;
+	background-color: #e1ecfb;
+	border-radius: 50%;
+	text-align: center;
+  }
+  .header-socials-wrap .header-social .header-social-icon span i {
+	line-height: 36px;
+	font-size: 13px;
+	color: var(--lighter-blue);
+  }
+  .custom-banner	{
+	  position: relative;
+	  overflow: hidden;
+	  z-index: 9;
+  }
+  .custom-banner.custom-pad {
+	padding: 210px 0 236px 0;
+  }
+  .custom-banner::after {
+	content: '';
+	background-image: url(../images/bg-overlay-home1.png);
+	background-position: top center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	position: absolute;
+	z-index: -1;
+  }
+  .banner-right-image img {
+	width: 120%;
+	margin-top: -30px;
+  }
+  .main-heading h1 {
+	font-size: 57px;
+	font-weight: 800;
+	color: #fff;
+	text-transform: capitalize;
+  }
+  .main-heading p {
+	font-size: 22px;
+	font-weight: 400;
+	color: #fff;
+	line-height: 33px;
+	margin-top: 20px;
+  }
+  .custom-banner-botton .custom-btn {
+	margin: 0;
+	font-size: 18px;
+	padding: 8px 30px;
+	height: 47px;
+	position: relative;
+	background-color: #fff;
+	border-radius: 0;
+	box-shadow: 4px -4px 10px rgba(238, 248, 255, 0.64);
+  }
+  .banner-btn span {
+	position: absolute;
+	width: 35px;
+	height: 35px;
+	background: linear-gradient(to right, #163172, #1e56a0, #2F77D7);
+	color: var(--light-blue-shade);
+	right: 6px;
+	top: 5px;
+	text-align: center;
+	border-radius: 50%;
+  }
+  .banner-btn span i {
+	font-size: 14px;
+	line-height: 32px;
+  }
+  .custom-banner-botton .custom-btn-outline	{
+	border: 1px solid	#fff;
+	color: var(--lighter-blue);
+  }
+  .wave-area {
+	height: 5%;
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	background: white;
+	z-index: 1;
+  }
+  
+  .wave {
+	background: url("../images/wave.svg") repeat-x;
+	position: absolute;
+	top: -100px;
+	width: 6400px;
+	height: 100px;
+	animation: wave 35s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
+	transform: translate3d(0, 0, 0);
+  }
+  
+  .wave:nth-of-type(2) {
+	top: -56px;
+	animation: wave 20s cubic-bezier(0.36, 0.45, 0.63, 0.53) -0.125s infinite,
+	  swell 7s ease -1.25s infinite;
+	opacity: 1;
+  }
+  
+  @keyframes wave {
+	0% {
+	  margin-left: 0;
+	}
+	100% {
+	  margin-left: -1600px;
+	}
+  }
+  
+  @keyframes swell {
+	0%,
+	100% {
+	  transform: translate3d(0, -45px, 0);
+	}
+	50% {
+	  transform: translate3d(0, 5px, 0);
+	}
+  }
+
+/* ############################## HEADER+BANNER SWAGATA 16.03.2022 ############################## */
+
+/* ############################## CLOUD STORAGE SWAGATA 17.03.2022 ############################## */
+
+.cloud-storage-left img	{
+	width: 100%;
+}
+
+
+/* Drag and Drop Box */
+.cloud-storage-r-box form{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -100px;
+	margin-left: -250px;
+	width: 500px;
+	height: 200px;
+	border: 2px dashed #000;
+  }
+  .cloud-storage-r-box form p{
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	line-height: 170px;
+	color: #000;
+	font-family: Arial;
+  }
+  .cloud-storage-r-box form input{
+	position: absolute;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	outline: none;
+	opacity: 0;
+  }
+  .cloud-storage-r-box form button{
+	margin: 0;
+	color: #fff;
+	background: linear-gradient(to right, #163172, #1e56a0, #2F77D7);
+	border: none;
+	width: 508px;
+	height: 35px;
+	margin-top: 20px;
+	margin-left: -4px;
+	border-radius: 4px;
+	border-bottom: 4px solid #117A60;
+	transition: all .2s ease;
+	outline: none;
+  }
+  .cloud-storage-r-box form button:hover{
+	background: #149174;
+	  color: #0C5645;
+  }
+  .cloud-storage-r-box form button:active{
+	border:0;
+  }
+  /* Drag and Drop Box */
+
+/* ############################## CLOUD STORAGE SWAGATA 17.03.2022 ############################## */
+
+
+
+
+/*=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+dp-toggle-nav-css-end=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+*/
+
