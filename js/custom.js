@@ -17,7 +17,7 @@ jQuery('#custom-owl').owlCarousel({
 });
 
 $(document).ready(function(){
-    $('form input').change(function () {
-      $('form p').text(this.files.length + " file(s) selected");
+    $('form .drag-n-drop-input').change(function () {
+      $('form .drap-n-drop-files').text(this.files.length + " file(s) selected");
     });
   });

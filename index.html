@@ -83,14 +83,15 @@
   </div>  
 </header>
 
-<section class="custom-banner bg-banner-gradient custom-pad">
+<section class="custom-banner custom-pad">
+  <div id="parallax-banner">
+    <!-- this div for parallax effect-->
+  </div>
   <div class="banner-top">
     <div class="container">
       <div class="row">
         <div class="col-lg-6 align-self-center">
           <div class="custom-banner-content">
-        
-             
                 <div class="main-heading">
                   <h1>Strato - Decentralised Cloud Computing on the Blockchain</h1>
                     <p>Strato is a decentralised, secure and robust cloud computing solution providing the benefits of cloud computing without the risks of centralised solutions.</p>
@@ -99,8 +100,6 @@
                   <a href="#" class="btn custom-btn custom-btn-outline banner-btn">create an account </a>
                   <!-- <span><i class="fas fa-user-plus"></i></span> -->
                 </div>
-              
-       
           </div>
         </div>
         <div class="col-lg-6 align-self-center">
@@ -119,7 +118,7 @@
   </div>
 </section>
 
-<section class="cloud-storage-sb">
+<section class="cloud-storage-sb custom-pad">
   <div class="container">
     <div class="row">
       <div class="col-lg-10">
@@ -128,37 +127,56 @@
         </div>
       </div>
     </div>
+ 
     <div class="row">
-      <div class="col-lg-6">
+      <div class="col-lg-6 align-self-center">
         <div class="cloud-storage-left">
           <img src="images/cloud-storage-img.png" alt="">
         </div>
       </div>
-      <div class="col-lg-6">
+      <div class="col-lg-6 align-self-center">
         <div class="cloud-storage-right">
           <div class="cloud-storage-r-heading">
             <h4>Drag and drop files you want to store on strato</h4>
           </div>
           <div class="cloud-storage-r-buttons">
             <div class="row">
-              <div class="col-lg-6">
-                <div class="cs-download-starto"></div>
+              <div class="col-lg-6 pr-1  align-self-center">
+                <div class="cs-download-starto text-center">
+                  <a href="#" class="cs-button custom-btn-fill">Download Strato cloud software</a>
+                </div>
               </div>
-              <div class="col-lg-6">
-                <div class="cs-create-an-account"></div>
+              <div class="col-lg-6  pl-1 align-self-center">
+                <div class="cs-create-an-account text-center">
+                  <a href="#" class="cs-button custom-btn-outline">Create an account</a>
+
+                </div>
               </div>
             </div>
           </div>
           <div class="cloud-storage-r-box">
             <!-- partial:index.partial.html -->
-            <form action="upload.php" method="POST">
-              
-              <input type="file" multiple>
-              <p><span class="drag-n-drop-icon">
-                <img src="images/drag-n-drop-icon.png" alt="">
-              </span> Drag & drop here <span>or Browse files</span></p>
-              <button type="submit">Upload</button>
+            <form class="cs-upload-box" action="upload.php" method="POST">
+              <div class="cs-upload-box-wrap">
+                <input class="drag-n-drop-input" type="file" multiple>
+                <p>
+                  <span class="drag-n-drop-icon">
+                    <img src="images/drag-n-drop-icon.png" alt="">
+                  </span> 
+                  Drag & drop header
+                </p>
+                <div class="custom_upload text-center mt-3">
+                  <label for="upload">
+                    <input type="file" name="" id="upload">
+                    <span>upload</span>
+                  </label>
+                </div>
+              </div>
+             
+              <button class="cs-button custom-btn-fill" type="submit">Upload</button>
             </form>
+            
+
           </div>
           <div class="cloud-storage-r-heading"></div>
           <div class="cloud-storage-r-heading"></div>
@@ -169,9 +187,107 @@
   </div>
 </section>
 
+<section class="run-a-partner custom-pad">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="custom-heading">
+          <h3>Run a Partner Node</h3>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-3 align-self-center">
+        <div class="run-a-part-box">
+          <div class="run-a-part-box-icn">
+            <img src="./images/purchase-online.png" alt="">
+          </div>
+          <div class="run-a-part-box-btn">
+            <a class="" href="#">purchase your online node</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 align-self-center">
+        <div class="run-a-part-mid">
+          <div class="run-a-part-mid-img">
+            <img src="./images/run-a-partner-bg.jpg" alt="">
+          </div>
+          <div class="run-a-part-mid-content">
+            <a href="#" class="cs-button custom-btn-fill">Earn STRATO</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 align-self-center">
+        <div class="run-a-part-box">
+          <div class="run-a-part-box-icn">
+            <img src="./images/download.png" alt="">
+          </div>
+          <div class="run-a-part-box-btn">
+            <a href="#">download and install</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="custom-pad">
+  <div class="footer-shape-top">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" preserveAspectRatio="none">
+      <path class="footer-shape-fill" d="M500,97C126.7,96.3,0.8,19.8,0,0v100l1000,0V1C1000,19.4,873.3,97.8,500,97z">
+      </path>
+    </svg>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-10">
+        <div class="footer-logo">
+          <img src="images/footer-logo.png" alt="">
+        </div>
+        <div class="footer-menu">
+          <ul class="footer-menu-list text-center">
+            <li class="footer-menu-item">
+              <a class="footer-menu-link" href="#">Home</a>
+            </li>
+            <li class="footer-menu-item">
+              <a class="footer-menu-link"  href="#">Nodes</a>
+            </li>
+            <li class="footer-menu-item">
+              <a  class="footer-menu-link" href="#">"Get strato" discord</a>
+            </li>
+            <li class="footer-menu-item">
+              <a class="footer-menu-link"  href="#"> login</a>
+            </li>
+            <li class="footer-menu-item">
+              <a  class="footer-menu-link" href="#">Signup</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-socials">
+          <ul class="header-socials-wrap text-center">
+            <li class="header-social">
+              <a href="#" class="header-social-icon"><span><i class="fab fa-facebook-f"></i></span></a>
+            </li>
+            <li class="header-social">
+              <a href="#" class="header-social-icon"><span><i class="fab fa-twitter"></i></span></a>
+            </li>
+            <li class="header-social">
+              <a href="#" class="header-social-icon"><span><i class="fab fa-linkedin-in"></i></span></a>
+            </li>
+            <li class="header-social">
+              <a href="#" class="header-social-icon"><span><i class="fab fa-instagram"></i></span></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
 <!-- Optional JavaScript --> 
 <!-- jQuery first, then Popper.js, then Bootstrap JS --> 
 <script src="js/jquery-min.js"></script> 
+<script src="js/parallax.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script> 
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script> 
 <script src="js/owl.carousel.min.js"></script> 

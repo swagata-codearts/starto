@@ -88,10 +88,6 @@ border: 1px solid;
 border-color: var(--lighter-blue);
 color: var(--lighter-blue);
 }
-.bg-banner-gradient {
-	background-color: transparent;
-	background-image: linear-gradient(80deg,#163172 0%,#2F77D7 100%);
-  }
 
 /* ################################ CUSTOM CLASSES ################################ */
 
@@ -163,7 +159,7 @@ color: var(--lighter-blue);
 }
 
 
-/* ############################## HEADER+BANNER SWAGATA 16.03.2022 ############################## */
+/* ############################## HEADER+BANNER Start SWAGATA 16.03.2022 ############################## */
 .navbar-brand img {
 	height: 56px;
   }
@@ -218,26 +214,35 @@ color: var(--lighter-blue);
 	  position: relative;
 	  overflow: hidden;
 	  z-index: 9;
+	  background-color: transparent;
+	  background-image: linear-gradient(80deg,#163172 0%,#2F77D7 100%);
   }
+  #parallax-banner{
+	position: absolute;
+	background-image: url(../images/bg-overlay-home1.png);
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-repeat: repeat;
+	background-position: top center;
+}
   .custom-banner.custom-pad {
 	padding: 210px 0 236px 0;
   }
-  .custom-banner::after {
-	content: '';
-	background-image: url(../images/bg-overlay-home1.png);
-	background-position: top center;
-	background-repeat: no-repeat;
-	background-size: contain;
-	height: 100%;
-	width: 100%;
-	top: 0;
-	left: 0;
-	position: absolute;
-	z-index: -1;
+
+  .banner-right-image img {
+	width: 120%;
+	margin-top: -30px;
   }
   .banner-right-image img {
 	width: 120%;
 	margin-top: -30px;
+	animation: zoomin 3s alternate infinite ease-in;
+  }
+  @keyframes zoomin {
+	  0% {transform: scale(1);}
+	  100% {transform: scale(1.18);}
   }
   .main-heading h1 {
 	font-size: 57px;
@@ -259,7 +264,6 @@ color: var(--lighter-blue);
 	height: 47px;
 	position: relative;
 	background-color: #fff;
-	border-radius: 0;
 	box-shadow: 4px -4px 10px rgba(238, 248, 255, 0.64);
   }
   .banner-btn span {
@@ -327,33 +331,101 @@ color: var(--lighter-blue);
 	}
   }
 
-/* ############################## HEADER+BANNER SWAGATA 16.03.2022 ############################## */
+/* ############################## HEADER+BANNER START SWAGATA 16.03.2022 ############################## */
 
 /* ############################## CLOUD STORAGE SWAGATA 17.03.2022 ############################## */
+.custom-heading h3 {
+  text-align: center;
+  font-size: 48px;
+  font-weight: 700;
+  color: #333;
+  line-height: 40px;
+  margin-bottom: 30px;
+}
+  .cloud-storage-r-heading h4 {
+	font-weight: 700;
+	color: #424242;
+	font-size: 26px;
+	line-height: 50px;
+	text-transform: capitalize;
+  }
+.cloud-storage-sb	{
+	position: relative;
+}
+.cloud-storage-sb::after {
+	position: absolute;
+	content: '';
+	background-image: url(../images/drag-n-drop-bg-captcha.png);
+	top: 0;
+	right: 0;
+	width: 300px;
+	height: 100%;
+	background-size: contain;
+	background-position: center right;
+	background-repeat: no-repeat;
+	z-index: -9;
+  }
 
 .cloud-storage-left img	{
 	width: 100%;
 }
+.cloud-storage-right {
+	position: relative;
+  }
+.cloud-storage-r-buttons {
+	margin-top: 20px;
+  }
+.cs-button {
+	width: 100%;
+	display: inline-block;
+	padding: 15px 0;
+	border-radius: 4px;
+	font-size: 14px;
+	text-transform: uppercase;
+	font-weight: 600;
+	font-family: 'Montserrat', sans-serif;
+  }
 
+.cs-upload-box	{
+	position: relative;
+}
+.custom_upload{
+	width: 100%;
+}
+.custom_upload label {
+	margin-bottom: 0;
+  }
+.custom_upload label input[type="file"]{
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0;
+}
 
 /* Drag and Drop Box */
 .cloud-storage-r-box form{
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	margin-top: -100px;
-	margin-left: -250px;
-	width: 500px;
-	height: 200px;
-	border: 2px dashed #000;
-  }
-  .cloud-storage-r-box form p{
+	/* width: 500px;
+	height: 200px; */
 	width: 100%;
-	height: 100%;
+	
+  }
+  .cs-upload-box-wrap {
+	border: 2px dashed #000;
+	margin-top: 20px;
+	padding: 90px 10px;
+	border-radius: 4px;
+  }
+  .cloud-storage-r-box form p, .custom_upload label span{
+	width: 100%;
 	text-align: center;
-	line-height: 170px;
-	color: #000;
-	font-family: Arial;
+	font-size: 19px;
+	line-height: 24px;
+	color: #606060;
+	text-transform: capitalize;
+  }
+  .cloud-storage-r-box form p .drag-n-drop-icon {
+	display: block;
+	margin-bottom: 15px;
   }
   .cloud-storage-r-box form input{
 	position: absolute;
@@ -365,16 +437,10 @@ color: var(--lighter-blue);
 	opacity: 0;
   }
   .cloud-storage-r-box form button{
-	margin: 0;
-	color: #fff;
-	background: linear-gradient(to right, #163172, #1e56a0, #2F77D7);
 	border: none;
-	width: 508px;
-	height: 35px;
 	margin-top: 20px;
-	margin-left: -4px;
 	border-radius: 4px;
-	border-bottom: 4px solid #117A60;
+	/* border-bottom: 4px solid #117A60; */
 	transition: all .2s ease;
 	outline: none;
   }
@@ -390,7 +456,107 @@ color: var(--lighter-blue);
 /* ############################## CLOUD STORAGE SWAGATA 17.03.2022 ############################## */
 
 
+/* ############################## run-a-partner Saraswata 17.03.2022 start ############################## */
+  .run-a-part-mid img{
+	  width: 100%;
+	  border-radius: 10px;
+  }
+  .run-a-part-box{
+	  border-radius: 10px;
+	  border: 1px solid #007BFC;
+	  text-align: center;
+  }
+  .run-a-part-box-icn{
+	  padding: 45px 30px;
+  }
+  .run-a-part-box-icn img{
+	  width: 70px;
+	  height: 70px;
+  }
+  .run-a-part-box-btn {
+	font-family: 'Montserrat',sans-serif;
+	font-weight: 600;
+	font-size: 22px;
+	line-height: 28px;
+	margin-top: -41px;
+	padding: 20px 8px 45px 8px;
+  }
+  .run-a-part-box-btn a{
+	  color: #333;
+	  text-transform: uppercase;
+  }
+  .run-a-part-mid-content{
+	  text-align: center;
+	  font-family: 'Montserrat',sans-serif;
+	  font-weight: 600;
+	  font-size: 40px;
+	  width: 100%;
+	  padding: 20px 0px;
+  }
 
+/* ############################## run-a-partner Saraswata 17.03.2022 end ############################## */
+
+footer {
+	position: relative;
+	background-image: linear-gradient(80deg,#163172 0%,#2F77D7 100%);
+}
+.footer-shape-top {
+	top: -1px;
+	overflow: hidden;
+	position: absolute;
+	left: 0;
+	width: 100%;
+	line-height: 0;
+	direction: ltr;
+  }
+  .footer-shape-top {
+	-webkit-transform: rotate(180deg);
+	-ms-transform: rotate(180deg);
+	transform: rotate(180deg);
+  }
+  .footer-shape-top svg {
+	display: block;
+	width: -webkit-calc(100% + 1.3px);
+	width: calc(100% + 1.3px);
+	position: relative;
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	transform: translateX(-50%);
+	width: calc(142% + 1.3px);
+  }
+  .footer-shape-fill {
+	fill: #fff;
+	-webkit-transform-origin: center;
+	-ms-transform-origin: center;
+	transform-origin: center;
+	-webkit-transform: rotateY(0deg);
+	transform: rotateY(0deg);
+  }
+  .footer-logo img {
+	width: 170px;
+  }
+  .footer-logo {
+	  text-align: center;
+  }
+  .footer-menu {
+	padding: 34px 10px 20px;
+  }
+  .footer-menu-item{
+	  display: inline-block;
+  }
+  .footer-menu .footer-menu-item .footer-menu-link {
+	display: block;
+	margin: 0 14px;
+	color: #fff;
+	font-size: 20px;
+	text-transform: uppercase;
+  }
+  .footer-socials .header-social:not(:last-child) {
+	padding-right: 15px;
+  }
 
 /*=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+dp-toggle-nav-css-end=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+*/
+
+
 
