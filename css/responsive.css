@@ -1,11 +1,15 @@
 @charset "utf-8";
 /* CSS Document */
 @media (min-width: 1024px) and (max-width: 1200px){
-	
+	.header-socials-wrap .header-social .header-social-icon span { width: 24px;height: 24px;}
+.header-socials-wrap .header-social .header-social-icon span i {line-height: 23px;font-size: 11px;}
+.custom-btn{font-size: 10px;padding: 7px 15px;}
 }
 
 @media (min-width: 992px) and (max-width: 1024px) {
-	
+.header-socials-wrap .header-social .header-social-icon span { width: 24px;height: 24px;}
+.header-socials-wrap .header-social .header-social-icon span i {line-height: 23px;font-size: 11px;}
+.custom-btn{font-size: 10px;padding: 7px 15px;}
 }
 
 @media only screen and (max-width: 991px) {    
@@ -19,7 +23,30 @@
 .navbar-toggle .icon-bar:nth-child(4){transform:rotate(45deg)translateY(-4px)translateX(-3px);}
 .navbar-header {display: block;}
 
+/* header @sb 21.03.2022 start */
 
+.custom-header .header-socials-wrap { display: none;} 
+.header-right { position: absolute;bottom: 0;left: 50%; transform: translate(-50%, -35%);text-align: center;}
+/* header @sb 21.03.2022 end */
+
+/* banner @sb 21.03.2022 start */
+.main-heading h1 {font-size: 35px;text-align: center;}
+.main-heading p {font-size: 20px;line-height: 28px;text-align: center;}
+.custom-banner-botton {text-align: center;}
+.custom-banner.custom-pad {padding: 120px 0 190px 0;}
+.banner-right-image {width: 90%;margin-top: 30px;}
+.banner-right-image img {width: 100%;margin-top: 0;}
+.custom-banner-botton .custom-btn {font-size: 14px;line-height: 31px;}
+
+.dp-circle-1 {top: 13%;}
+.dp-circle-2 {left: 23%;top: 25%;}
+.dp-circle-3 {left: 26%;}
+.dp-circle-4 {left: 49%}
+.dp-circle-5 {left: 57%;top: 22%;}
+.dp-circle-6 {left: 69%;top: 39%;}
+.dp-circle-7 {left: 84%;top: 13%;}
+.dp-circle-8 {left: 84%;top: 76%;}
+/* banner @sb 21.03.2022 end */
 
 
 /* ===== Swagata 17.03.2022 start */
@@ -39,12 +66,16 @@ footer.custom-pad {padding-top: 60px;}
 
 
 @media (max-width: 767px){
-   .custom-pad { padding: 40px 0;}
-   .cloud-storage-r-buttons .pr-1 {padding-right: 15px !important;}
-   .cloud-storage-r-buttons .pl-1  {padding-left: 15px !important; padding-top: 15px;}
-   .custom-heading h3 {font-size: 34px;}
-   .cloud-storage-r-heading h4 {font-size: 21px;line-height: 30px;}
-   .footer-menu .footer-menu-item .footer-menu-link {margin: 0 6px;font-size: 15px;}
+.custom-pad { padding: 40px 0;}
+.cloud-storage-r-buttons .pr-1 {padding-right: 15px !important;}
+.cloud-storage-r-buttons .pl-1  {padding-left: 15px !important; padding-top: 15px;}
+.header-button-wrap {display: none; }
+.main-heading h1 { font-size: 33px; line-height: 41px;}
+.main-heading p {font-size: 16px;line-height: 21px;}
+.custom-banner-botton.mt-3{margin-top: 25px;}
+.custom-heading h3 {font-size: 34px;}
+.cloud-storage-r-heading h4 {font-size: 21px;line-height: 30px;}
+.footer-menu .footer-menu-item .footer-menu-link {margin: 0 6px;font-size: 15px;}
    
 
 }
@@ -52,6 +83,10 @@ footer.custom-pad {padding-top: 60px;}
    .custom-heading h3 { font-size: 30px; }
    .cloud-storage-r-heading h4 { font-size: 20px;line-height: 27px;  }
    .cs-button {font-size: 12px;}
+   .main-heading h1 { font-size: 24px; line-height: 31px;}
+   .main-heading p {font-size: 14px;line-height: 19px;}
+   .custom-banner-botton .custom-btn {font-size: 11px;line-height: 30px;}
+    .custom-banner-botton .custom-btn {padding: 3px 30px; height: max-content;}
    .run-a-part-box-btn {font-size: 16px;}
    .footer-logo img { width: 120px }
    .footer-menu .footer-menu-item .footer-menu-link { margin: 0 3px;font-size: 13px;}
@@ -64,5 +99,10 @@ footer.custom-pad {padding-top: 60px;}
    .custom-heading h3 {font-size: 26px;}
    .custom-pad {padding: 20px 0;}
     footer.custom-pad {padding-top: 50px;}
+    .banner-right-image {width: 100%;margin-top: 25px;}
+    .main-heading h1 {font-size: 19px;line-height: 27px;}
+    .main-heading p {font-size: 13px;line-height: 17px;margin-top: 15px;}
+    .custom-banner-botton .custom-btn { padding: 2px 15px;}
+    .navbar-brand img {  height: 40px;}
    
 }
