@@ -160,6 +160,7 @@ color: var(--lighter-blue);
 
 
 /* ############################## HEADER+BANNER Start SWAGATA 16.03.2022 ############################## */
+
 .navbar-brand img {
 	height: 56px;
   }
@@ -193,10 +194,21 @@ color: var(--lighter-blue);
 	  width: 100%;
 
   }
+  .header-right ul {
+	display: inline-block;
+	vertical-align: middle;
+  }
   .header-button-wrap .header-btn, .header-socials-wrap .header-social {
 	display: inline-block;
   }
-  
+  .header-right .header-socials-wrap {
+	width: 40%;
+	text-align: right;
+  }
+  .header-button-wrap {
+	width: 59%;
+	text-align: right;
+  }
   .header-socials-wrap .header-social .header-social-icon span {
 	width: 35px;
 	display: inline-block;
@@ -227,7 +239,7 @@ color: var(--lighter-blue);
 	background-repeat: repeat;
 	background-position: top center;
 }
-  .custom-banner.custom-pad {
+.custom-banner.custom-pad {
 	padding: 210px 0 236px 0;
   }
   .banner-right-image {
@@ -314,6 +326,7 @@ color: var(--lighter-blue);
 	line-height: 33px;
 	margin-top: 20px;
   }
+  .header-button-wrap-for-mobile {display: none; }
   .custom-banner-botton .custom-btn {
 	margin: 0;
 	font-size: 18px;
@@ -514,7 +527,8 @@ color: var(--lighter-blue);
 
 
 /* ############################## run-a-partner Saraswata 17.03.2022 start ############################## */
-  .run-a-part-mid img{
+.run-a-partner.custom-pad { padding-top: 0 !important;}
+.run-a-part-mid img{
 	  width: 100%;
 	  border-radius: 10px;
   }
@@ -612,6 +626,115 @@ footer {
   .footer-socials .header-social:not(:last-child) {
 	padding-right: 15px;
   }
+
+
+/*=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+sb-inner-page-css-start=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+*/
+.custom-banner.buy-nodes-banner.custom-pad {
+	padding: 174px 0 200px 0;
+  }
+.buy-nodes-banner .breadcrumb	{
+	background-color: transparent;
+}
+.buy-nodes-banner .breadcrumb-item {
+	font-size: 24px;
+  }
+  .buy-nodes-banner  .breadcrumb-item a {
+	color: var(--light-blue-shade);
+  }
+  .buy-nodes-banner  .breadcrumb-item.active {
+	  color: #9fc6f8;
+  }
+  .buy-nodes-banner  .breadcrumb-item + .breadcrumb-item::before	{
+	  content: '>';
+	  color: var(--light-blue-shade);
+  }
+
+  .buy-nodes.custom-pad	{
+	  padding-block: 60px;
+  }
+  .buy-nodes .custom-heading h3 {
+	text-align: left;
+	font-size: 40px;
+	line-height: 51px;
+  }
+  .buy-nodes .custom-heading p {
+	font-size: 27px;
+	margin-bottom: 25px;
+  }
+  .buy-nodes .cs-button {
+	  width: 42%;
+	  font-size: 16px;
+	  text-align: center;
+	}
+  .buy-nodes .buy-nodes-img img {
+	width: 70%;
+  }
+
+
+
+/* ############################## inner-strato-partner-license @sb 21.03.2022 ############################## */
+nav[aria-label="breadcrumb"]	{
+	display: inline-block;
+}
+
+.strato-node-image img {
+	width: 100%;
+  }
+  .license-checkboxes {
+	margin-top: 35px;
+	background-color: var(--light-blue-shade);
+	padding: 30px;
+	border-radius: 9px;
+  }
+  .cs-download-license {
+	margin-block: 11px;
+  }
+  
+  .cs-download-license .cs-button {
+	width: 42%;
+	text-align: center;
+  }
+  .custom-license-form .input-group	{
+	  /* flex-direction: column; */
+  }
+  .custom-license-form .input-group > .custom-select {
+	font-size: 20px;
+	height: auto;
+	background-color: #fff;
+	background-image: url(../images/inner-dropdown-arrow.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: 98% center;
+	background-size: 9px;
+	border: none;
+	border-radius: 4px;
+  }
+	.custom-input-price {
+		margin-left: 20px;
+	  }
+  .custom-input-price label {
+	display: inline-block;
+	margin-bottom: .5rem;
+	font-size: 36px;
+	font-weight: 800;
+	font-family: 'Montserrat';
+	color: var(--dark-blue);
+	border: 1px dashed black;
+	border-radius: 4px;
+	padding-inline: 29px;
+	margin-bottom: 0;
+  }
+  .custom-license-form .input-group > .custom-select option {
+	font-size: 15px;
+  }
+/* ############################## inner-strato-partner-license @sb 21.03.2022 ############################## */
+
+
+
+  
+/*=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+sb-inner-page-css-end=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+*/
+
+
 
 /*=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+dp-toggle-nav-css-end=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+*/
 

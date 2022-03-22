@@ -4,12 +4,18 @@
 	.header-socials-wrap .header-social .header-social-icon span { width: 24px;height: 24px;}
 .header-socials-wrap .header-social .header-social-icon span i {line-height: 23px;font-size: 11px;}
 .custom-btn{font-size: 10px;padding: 7px 15px;}
+.run-a-partner.custom-pad {  padding-top: 0; }
+
 }
 
 @media (min-width: 992px) and (max-width: 1024px) {
 .header-socials-wrap .header-social .header-social-icon span { width: 24px;height: 24px;}
 .header-socials-wrap .header-social .header-social-icon span i {line-height: 23px;font-size: 11px;}
 .custom-btn{font-size: 10px;padding: 7px 15px;}
+.cs-button  {font-size: 10px;}
+.run-a-partner.custom-pad { padding-top: 0;}
+
+
 }
 
 @media only screen and (max-width: 991px) {    
@@ -23,20 +29,39 @@
 .navbar-toggle .icon-bar:nth-child(4){transform:rotate(45deg)translateY(-4px)translateX(-3px);}
 .navbar-header {display: block;}
 
-/* header @sb 21.03.2022 start */
 
+
+
+/* header @sb 21.03.2022 start */
+.custom-header {
+	position: absolute;
+	width: 100%;
+	top: 0;
+	z-index: 9999;
+	left: 0;
+	background-color: #fff;
+  }
+  .custom-banner.custom-pad {margin-top: 82px;}
 .custom-header .header-socials-wrap { display: none;} 
-.header-right { position: absolute;bottom: 0;left: 50%; transform: translate(-50%, -35%);text-align: center;}
+.header-right .header-button-wrap { display: none;} 
+.header-button-wrap {text-align: center;}
+.custom-header .navbar-header {margin-right: 0; margin-left: 0;}
+.navbar-nav .nav-item {margin: 0 0px;}
+.navbar-nav .nav-item::before {display: none;}
+.navbar-nav { margin-top: 10px;}
+.header-button-wrap-for-mobile {display: block; }
 /* header @sb 21.03.2022 end */
 
 /* banner @sb 21.03.2022 start */
 .main-heading h1 {font-size: 35px;text-align: center;}
 .main-heading p {font-size: 20px;line-height: 28px;text-align: center;}
 .custom-banner-botton {text-align: center;}
-.custom-banner.custom-pad {padding: 120px 0 190px 0;}
-.banner-right-image {width: 90%;margin-top: 30px;}
+.custom-banner.custom-pad {padding: 70px 0 150px 0 !important;}
+.banner-right-image {width: 90%;margin-top: 40px;}
 .banner-right-image img {width: 100%;margin-top: 0;}
 .custom-banner-botton .custom-btn {font-size: 14px;line-height: 31px;}
+
+.custom-heading h3 {font-size: 37px;margin-bottom: 18px;}
 
 .dp-circle-1 {top: 13%;}
 .dp-circle-2 {left: 23%;top: 25%;}
@@ -57,11 +82,37 @@
 .cloud-storage-right {padding-top: 45px;}
 .run-a-part-mid {padding-top: 30px;}
 .custom-pad { padding: 60px 0;}
+.run-a-partner.custom-pad {
+   padding-top: 0;
+ }
 .custom-header .navbar-brand {margin-left: 0;}
 .custom-header .navbar-header {margin-right: 0;}
 .container  {width: 95%;}
 footer.custom-pad {padding-top: 60px;}
+
  /* ===== Swagata 17.03.2022 end */
+
+ .buy-nodes-banner .breadcrumb-item {
+   font-size: 21px;
+ }
+ .buy-nodes .custom-heading h3 {
+   text-align: center;
+   font-size: 31px;
+   line-height: 40px;
+ }
+ .buy-nodes .custom-heading p {font-size: 22px;text-align: center;line-height: 30px;}
+ .bn-buy-now-starto {text-align: center;}
+ .buy-nodes .cs-button {width: 38%;font-size: 13px;padding: 8px 0;}
+ .buy-nodes .buy-nodes-img img {width: 50%;}
+ .buy-nodes-img {padding-bottom: 30px;}
+
+ .partner-license .cs-button {
+	font-size: 12px;
+  }
+  .cs-download-license .cs-button {
+   padding-block: 9px;
+ }
+
 }
 
 
@@ -73,16 +124,22 @@ footer.custom-pad {padding-top: 60px;}
 .main-heading h1 { font-size: 33px; line-height: 41px;}
 .main-heading p {font-size: 16px;line-height: 21px;}
 .custom-banner-botton.mt-3{margin-top: 25px;}
-.custom-heading h3 {font-size: 34px;}
+.custom-heading h3 {font-size: 32px;}
 .cloud-storage-r-heading h4 {font-size: 21px;line-height: 30px;}
 .footer-menu .footer-menu-item .footer-menu-link {margin: 0 6px;font-size: 15px;}
-   
+.cloud-storage-left img {width: 80%;}
+.header-right ul{display: none;}
+.header-button-wrap-for-mobile {display: block; }
 
+.header-button-wrap .custom-btn {font-size: 10px;padding: 1px 25px;height: 26px;}
+.header-button-wrap {text-align: center;}
+.header-button-wrap .custom-btn-outline {line-height: 21px;}
+.custom-header .navbar-header {margin-right: 0; margin-left: 0;}
 }
 @media only screen and (max-width: 480px) {	
    .custom-heading h3 { font-size: 30px; }
    .cloud-storage-r-heading h4 { font-size: 20px;line-height: 27px;  }
-   .cs-button {font-size: 12px;}
+   .cs-button {font-size: 12px; padding-block: 10px;}
    .main-heading h1 { font-size: 24px; line-height: 31px;}
    .main-heading p {font-size: 14px;line-height: 19px;}
    .custom-banner-botton .custom-btn {font-size: 11px;line-height: 30px;}
@@ -96,13 +153,24 @@ footer.custom-pad {padding-top: 60px;}
 }
 
 @media  (max-width: 390px) {
-   .custom-heading h3 {font-size: 26px;}
+   .custom-heading h3 {  font-size: 24px;margin-bottom: 4px;}
    .custom-pad {padding: 20px 0;}
     footer.custom-pad {padding-top: 50px;}
     .banner-right-image {width: 100%;margin-top: 25px;}
-    .main-heading h1 {font-size: 19px;line-height: 27px;}
+    .main-heading h1 {font-size: 18px;line-height: 27px;}
     .main-heading p {font-size: 13px;line-height: 17px;margin-top: 15px;}
     .custom-banner-botton .custom-btn { padding: 2px 15px;}
     .navbar-brand img {  height: 40px;}
+    .cloud-storage-sb.custom-pad { padding-top: 0; }
    
+    .partner-license .cs-button {
+      font-size: 10px;
+    }
+    .custom-license-form .input-group {
+      flex-direction: column-reverse;
+    }
+    .custom-license-form .input-group > .custom-select {
+       width: 100%;
+    }
+    .custom-input-price {margin: 0px 0 15px 0;text-align: center;}
 }
